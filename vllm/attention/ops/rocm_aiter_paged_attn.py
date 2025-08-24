@@ -57,7 +57,7 @@ class AITERPagedAttention(PagedAttention):
         tp_rank: int = 0,
         blocksparse_local_blocks: int = 0,
         blocksparse_vert_stride: int = 0,
-        blocksparse_block_size: int = 64,
+        blocksparse_block_size: int = 128,
         blocksparse_head_sliding_step: int = 0,
     ) -> torch.Tensor:
         if kv_cache_dtype not in ["int8", "fp8", "fp8_e4m3"]:
